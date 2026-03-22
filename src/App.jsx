@@ -1,8 +1,15 @@
 import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () =>{
     return(
-    <div>App</div>
+        <div className="flex-center">
+            <h1 className="text-2xl text-red-500">Hola Señor Domingo, de aqui al cielo</h1>
+        </div>
     )
 }
 export default App
