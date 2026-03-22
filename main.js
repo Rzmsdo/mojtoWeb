@@ -1,24 +1,24 @@
 /* ===================================================
-   Mandarina Projects — Main JavaScript
+   Mandarina Projects — JavaScript Principal
    =================================================== */
 
 (function () {
   "use strict";
 
-  /* ---------- Navbar scroll effect ---------- */
+  /* ---------- Efecto de desplazamiento en la barra de navegación ---------- */
   const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 20);
   }, { passive: true });
 
-  /* ---------- Mobile menu toggle ---------- */
+  /* ---------- Menú móvil (hamburguesa) ---------- */
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
 
   menuToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("open");
     menuToggle.setAttribute("aria-expanded", isOpen);
-    // Animate hamburger → X
+    // Animar hamburguesa → X
     const spans = menuToggle.querySelectorAll("span");
     if (isOpen) {
       spans[0].style.transform = "translateY(7px) rotate(45deg)";
@@ -31,7 +31,7 @@
     }
   });
 
-  // Close menu on link click
+  // Cerrar menú al hacer clic en un enlace
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("open");
@@ -43,7 +43,7 @@
     });
   });
 
-  /* ---------- Intersection Observer — fade-in on scroll ---------- */
+  /* ---------- IntersectionObserver — aparecer al hacer scroll ---------- */
   const observerOptions = { threshold: 0.12 };
   const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -64,12 +64,12 @@
     fadeObserver.observe(el);
   });
 
-  // Apply visible state via CSS class
+  // Aplicar estado visible mediante clase CSS
   const style = document.createElement("style");
   style.textContent = ".fade-target.visible { opacity: 1 !important; transform: translateY(0) !important; }";
   document.head.appendChild(style);
 
-  /* ---------- Contact form validation ---------- */
+  /* ---------- Validación del formulario de contacto ---------- */
   const form = document.getElementById("contact-form");
   const formSuccess = document.getElementById("form-success");
 
@@ -99,7 +99,7 @@
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Reset errors
+    // Limpiar errores previos
     ["name", "email", "message"].forEach(clearError);
     formSuccess.hidden = true;
 
@@ -124,7 +124,7 @@
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando…";
 
-      // Simulate async submit
+      // Simular envío asíncrono
       setTimeout(() => {
         form.reset();
         formSuccess.hidden = false;
@@ -134,7 +134,7 @@
     }
   });
 
-  /* ---------- Footer year ---------- */
+  /* ---------- Año en el pie de página ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
