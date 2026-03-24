@@ -18,6 +18,13 @@ export default function Hero() {
             </p>
             
             </div>
+            <div className="view-cocktails">
+           
+            <p className="subtitle">
+                Every cocktail has a story. <br/> Explore the world of cocktails with us.  
+
+            </p>
+            </div>
             </div>
         </div>
 
