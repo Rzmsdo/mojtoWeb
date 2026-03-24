@@ -1,0 +1,24 @@
+{
+  "name": "mandarina-project",
+  "version": "1.0.0",
+  "description": "Sitio oficial de Mandarina Projects",
+  "scripts": {
+    "build:css": "tailwindcss -i ./index.css -o ./style.css",
+    "watch:css": "tailwindcss -i ./index.css -o ./style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rzmsdo/mandarina-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rzmsdo/mandarina-project/issues"
+  },
+  "homepage": "https://github.com/Rzmsdo/mandarina-project#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
