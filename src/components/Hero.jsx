@@ -1,6 +1,25 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react"
+import { SplitText } from "gsap/all";
 
 
 export default function Hero() {
+useGSAP(() => {
+    const heroSplit = new SplitText('.title', { type: 'chars, words' });
+    const paragraphSplit = new SplitText('.subtitle', { type: 'lines' });
+
+
+    heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
+
+    gsap.from(heroSplit.chars, {
+        yPercent: 100,
+        duration: 1.8,
+        ease: "expo.out",
+        stagger: 0.06,
+    });
+}, []);
+   
+
     return (
         <>
         <section id="hero" className="noisy">
@@ -22,8 +41,8 @@ export default function Hero() {
            
             <p className="subtitle">
                 Every cocktail has a story. <br/> Explore the world of cocktails with us.  
-
             </p>
+            <a href="#cocktails">View Cocktails</a>
             </div>
             </div>
         </div>
