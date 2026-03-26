@@ -11,12 +11,32 @@ useGSAP(() => {
 
     heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
 
-    gsap.from(heroSplit.chars, {
+    gsap.from(heroSplit.chars, {        
         yPercent: 100,
         duration: 1.8,
         ease: "expo.out",
-        stagger: 0.06,
+        stagger: 0.2,
     });
+
+    gsap.from(paragraphSplit.lines, {
+        opacity: 0,
+        yPercent: 100,
+        duration: 1.8,
+        ease: "expo.out",
+        stagger: 0.2,
+        delay: 1,
+    });
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: '#hero',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+        }
+    })
+    .to('.left-leaf', { y: 300 }, 0)
+    .to('.right-leaf', { y: -300}, 0) //, rotation: 15, duration: 1.8, ease: "expo.out" 
 }, []);
    
 
