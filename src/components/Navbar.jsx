@@ -29,7 +29,7 @@ export const Navbar = () => {
                 </a>
                 <ul>
                     {navLinks.map((link) => (
-                        <li key={link.id} className='text-lg cursor-pointer'>
+                        <li key={link.id} className='text-lg cursor-pointer justify-center'>
                             <a href={`#${link.id}`}>{link.title}</a>
                         </li>
                     ))}

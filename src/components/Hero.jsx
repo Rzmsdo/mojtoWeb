@@ -33,7 +33,7 @@ useGSAP(() => {
              <div className="space-y-5 hidden md:block">
             <p>Cool. Crips. classic.</p>
             <p className="subtitle">
-                Sip the spirit <br/> of Smmer
+                Sip the spirit <br/> of Summer
             </p>
             
             </div>
