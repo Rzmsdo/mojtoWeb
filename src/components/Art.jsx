@@ -35,7 +35,7 @@ export const Art = () => {
     return (
         <div id="art">
             <div className="container mx-auto h-full pt-20">
-                <h2 className="will-fade">The Art</h2>
+                <h2 className="will-fade">El Arte</h2>
 
                 <div className="content">
                     <ul className="space-y-4 will-fade">
@@ -65,10 +65,10 @@ export const Art = () => {
                 </div>
                 
                 <div className="masked-container">
-                    <h2 className="will-fade">Sip-Worthy with Perfection</h2>
+                    <h2 className="will-fade">Delicioso y perfecto para disfrutar a sorbos</h2>
                     <div id="masked-content">
-                        <h3>Made with Craft Poured with Passion</h3>
-                        <p>This isn't just a drink, it's a carefully crafted moment made just for you.</p>
+                        <h3>Hecho con Pasión, servido con Amor</h3>
+                        <p>Esto no es solo una bebida, es un momento cuidadosamente elaborado solo para ti.</p>
                     </div>
                 </div>
             </div>

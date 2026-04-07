@@ -47,24 +47,24 @@ const Contact = () => {
             <img src="/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
 
             <div className="content">
-            <h2>Where to Find Us</h2>
+            <h2>Dónde encontrarnos</h2>
 <div>
-    <h3>Visit our bar</h3>
-    <p>Calle Corbeta, Calpe, Spain</p>
+    <h3>Visita nuestro bar</h3>
+    <p>Calle Corbeta, Calpe, España</p>
 </div>
 <div>
-    <h3>Contact us</h3>
+    <h3>Contáctanos</h3>
     <p>+34 682 647 917</p>
     <p>direzmas@gmail.com</p>
 </div>
 <div>
-    <h3>Opening Every Day</h3>
+    <h3>Abierto todos los días</h3>
     {openingHours.map((item, index) => (
         <p key={index}>{item.day}: {item.time}</p>
     ))}
 </div>
 <div>
-    <h3>Follow us on Social Media</h3>
+    <h3>Síguenos en las redes sociales</h3>
     <div className="flex-center gap-5">
         {socials.map((social, index) => (
             <a key={index} href={social.url}

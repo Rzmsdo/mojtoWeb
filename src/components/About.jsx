@@ -36,25 +36,25 @@ export default function About() {
             <div  className="mb-16 md:px-0 px-5"  >
                 <div className ="content">
                     <div className= "md:col-span-8">
-                        <p className="badge">Best cocktails</p>
-                        <h2>Where every detail matters <span className="text-white">-</span>
-                        from muddle to garnish
+                        <p className="badge">Nuestros mejores Cocteles</p>
+                        <h2>Dónde cada detalle importa <span className="text-white">- </span>
+                         desde el macerado hasta la guarnición
                         </h2>
                     </div>
                     <div className="sub-content">
                         <p>
-                            At our cocktail bar, we believe that every detail matters when it comes to crafting the perfect drink. 
-                            From the muddle of fresh ingredients to the final garnish, 
-                            we take pride in creating cocktails that are not only delicious but also visually stunning. 
-                            Our skilled mixologists carefully select each ingredient and pay 
-                            attention to every step of the process to ensure that every sip is a delightful experience.                             
+                            En nuestro bar de cócteles, creemos que cada detalle importa a la hora de crear la bebida perfecta. 
+                            Desde el macerado de ingredientes frescos hasta la guarnición final, 
+                            nos enorgullecemos de crear cócteles que no solo son deliciosos, sino también visualmente impresionantes. 
+                            Nuestros hábiles mixólogos seleccionan cuidadosamente cada ingrediente y prestan 
+                            atención a cada paso del proceso para garantizar que cada sorbo sea una experiencia deliciosa.                             
                         </p>
                         <div >
                             <p className="md:text-3xl text-xl font-bold">
                             <span>4.5</span>/5
                             </p>
                             <p className="text-sm text-white-100">
-                                More than 12000 costumers
+                                Más de 12000 clientes
                             </p>
                         </div>
 

@@ -74,7 +74,7 @@ export default function Hero() {
     return (
         <>
         <section id="hero" className="noisy">
-            <h1 className="title">Mojito Calpe</h1>
+            <h1 className="title">Mojito Cafe</h1>
            
            <img src="/images/hero-left-leaf.png" alt="left-leaf" className="left-leaf" />
            <img src="/images/hero-right-leaf.png" alt="right-leaf" className="right-leaf" />
@@ -82,18 +82,18 @@ export default function Hero() {
         <div className="body">
             <div className="content">
              <div className="space-y-5 hidden md:block">
-            <p>Cool. Crips. classic.</p>
+            <p>Cool. Crips. Clásico.</p>
             <p className="subtitle">
-                Sip the spirit <br/> of Summer
+                Disfruta del espíritu <br/> del verano
             </p>
             
             </div>
             <div className="view-cocktails">
            
             <p className="subtitle">
-                Every cocktail has a story. <br/> Explore the world of cocktails with us.  
+                Cada cóctel tiene una historia. <br/> Explora el mundo de los cócteles con nosotros.  
             </p>
-            <a href="#cocktails">View Cocktails</a>
+            <a href="#cocktails">Ver Cócteles</a>
             </div>
             </div>
         </div>

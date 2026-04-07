@@ -28,7 +28,7 @@ useGSAP(() => {
 
             <div className=" list">
                 <div className="popular">
-                    <h2 >Most popular cocktails:</h2>
+                    <h2 >los cocteles más solicitados:</h2>
                     <ul>
                         {cocktailLists.map((drink) => (
                             <li key={drink.name}>
@@ -43,7 +43,7 @@ useGSAP(() => {
 
                 </div>
                 <div className="loved">
-                    <h2 >Most loved cocktails:</h2>
+                    <h2 >los cocteles más amados:</h2>
                     <ul>
                         {mockTailLists.map((drink) => (
                             <li key={drink.name}>
